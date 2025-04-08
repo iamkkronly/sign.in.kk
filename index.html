@@ -2,45 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Secure Lock</title>
+  <title>Realistic CSS Lock</title>
   <style>
     body {
-      background: #111;
-      color: #0f0;
-      font-family: monospace;
+      background: #121212;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
     }
 
-    .lock-img {
-      width: 300px;
-      height: auto;
-      cursor: pointer;
-      user-select: none;
+    .lock-body {
+      width: 150px;
+      height: 180px;
+      background: linear-gradient(#666, #333);
+      border-radius: 20px;
+      position: relative;
+      box-shadow: inset -4px -4px 10px rgba(255,255,255,0.2),
+                  inset 4px 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .shackle {
+      width: 100px;
+      height: 100px;
+      border: 12px solid #ccc;
+      border-bottom: none;
+      border-radius: 60px 60px 0 0;
+      position: absolute;
+      top: -90px;
+      left: 25px;
+      background: #121212;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
     }
 
     .hidden-msg {
       display: none;
-      font-size: 20px;
+      color: lime;
+      font-family: monospace;
+      text-align: center;
       margin-top: 20px;
     }
 
-    .lock-img:hover + .hidden-msg {
+    .lock-body:hover + .hidden-msg {
       display: block;
     }
   </style>
 </head>
 <body>
 
-  <!-- Use any realistic lock image URL -->
-  <img class="lock-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Padlock_icon.svg/1024px-Padlock_icon.svg.png" alt="Lock">
-
-  <div class="hidden-msg">KEY: 3x4kZ-UNLOCK-xx88</div>
-
-  <!-- ain't no real link bro, just your imagination -->
+  <div class="lock-body">
+    <div class="shackle"></div>
+  </div>
+  <div class="hidden-msg">KEY: 404-SECRET-UNLOCKED</div>
 
 </body>
 </html>
