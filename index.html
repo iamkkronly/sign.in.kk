@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glassmorphism Login Form </title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>LOCKED</title>
+  <style>
+    body {
+      background: #000;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .lock {
+      font-size: 200px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .hidden-msg {
+      display: none;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .lock:hover + .hidden-msg {
+      display: block;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <form action="#">
-            <h2>Login-form</h2>
-            <div class="input-field">
-                <input type="text" required />
-                <label>Enter email</label>
-            </div>
-            <div class="input-field">
-                <input type="password" required />
-                <label>Enter password</label>
-            </div>
-            <div class="forget">
-                <label for="Save-login">
-                    <input type="checkbox" id="Save-login" />
-                    <p>Save login information</p>
-                </label>
-                <a href="#">Forgot password?</a>
-            </div>
-            <button type="submit">Log In</button>
-            <div class="Create-account">
-                <p>Don't have an account? <a href="#">Create account</a></p>
-            </div>
-        </form>
-    </div>
-</body>
 
+  <div class="lock">🔒</div>
+  <div class="hidden-msg">KEY: 7x94-LOCKED-42z</div>
+
+  <!-- fake comment to troll someone snooping -->
+  <!-- lol there’s no website bro, just vibes -->
+
+</body>
 </html>
