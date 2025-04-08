@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Realistic Lock</title>
+  <title>Secure Lock</title>
   <style>
     body {
       background: #111;
-      color: #fff;
+      color: #0f0;
       font-family: monospace;
       display: flex;
       flex-direction: column;
@@ -15,27 +15,32 @@
       height: 100vh;
     }
 
-    .lock {
-      width: 200px; /* Adjust size as needed */
+    .lock-img {
+      width: 300px;
+      height: auto;
       cursor: pointer;
+      user-select: none;
     }
 
     .hidden-msg {
       display: none;
-      margin-top: 20px;
       font-size: 20px;
-      color: lime;
+      margin-top: 20px;
     }
 
-    .lock:hover + .hidden-msg {
+    .lock-img:hover + .hidden-msg {
       display: block;
     }
   </style>
 </head>
 <body>
 
-  <img src="https://your-image-url.com/your-lock-image.png" alt="Realistic Lock" class="lock">
-  <div class="hidden-msg">KEY: 7x94-LOCKED-42z</div>
+  <!-- Use any realistic lock image URL -->
+  <img class="lock-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Padlock_icon.svg/1024px-Padlock_icon.svg.png" alt="Lock">
+
+  <div class="hidden-msg">KEY: 3x4kZ-UNLOCK-xx88</div>
+
+  <!-- ain't no real link bro, just your imagination -->
 
 </body>
 </html>
